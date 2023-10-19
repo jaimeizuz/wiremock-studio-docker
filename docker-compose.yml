@@ -1,0 +1,13 @@
+version: '3'
+
+volumes:
+  wiremock-data-storage:
+    driver: local
+
+services:
+  wiremock-studio:
+    image: jizuzquiza/wiremock-studio:2.32.0-18
+    volumes:
+      - wiremock-data-storage:/home/wiremock
+    ports:
+    - 9000-9010:9000-9010

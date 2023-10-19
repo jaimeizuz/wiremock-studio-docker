@@ -1,0 +1,1 @@
+FROM up9inc/wiremock-studio:2.32.0-18
